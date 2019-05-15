@@ -1,0 +1,121 @@
+body {
+    font-family: 'Roboto Slab'; 
+    background-color: rgb(255, 255, 255);
+}
+
+html, body, header, #intro {
+    height: 100%;
+
+}
+#intro {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.4), 
+        rgba(0, 0, 0, 0.4)),
+        url("../static/header.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.grey-text {
+    font-family: 'Open Sans';
+    font-size: 22px;
+}
+
+.exerpt {
+    font-family: 'Open Sans';
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  color: white;
+}
+
+.subtitle {
+    font-size: 30px;
+}
+
+
+a {
+    color: rgb(86, 128, 218);
+    font-family: 'Open Sans';
+
+}
+a:hover{
+    color: rgb(35, 66, 134);
+}
+
+.navbar {
+    font-family: arial !important;
+    background: #aaa;
+    transition: background-color 0.2s linear;
+    margin-bottom: 20px;
+}
+.navbar a {
+    color: rgb(255, 255, 255) !important;
+    text-transform: uppercase;
+}
+
+.navbar a:hover{
+    color: rgb(165, 202, 197) !important;
+}
+
+.fab, .fas {
+    color: #fff;
+    font-size: 30px;
+}
+
+.fab:hover, .fas:hover {
+    color: rgb(165, 202, 197) !important;
+}   
+
+.landing {
+   text-shadow: 2px 2px 4px #000000;
+   font-family: 'Open Sans', sans-serif; 
+   
+}
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color:rgb(165, 202, 197);
+}
+
+@media only screen and (min-width:768px) {
+    .navbar { background-color: transparent; border:none; transition:0.8s; }
+    .nav-scrolled { background-color:#aaa; transition:0.8s; }
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    background-color: #58585c;  
+}
+.carousel-indicators .active {
+    background-color: #a8bde9;
+}
+
+.section-link {
+    color: rgb(86, 128, 218);
+}
+
+.page-footer {
+    background: #292929;
+    font-family: 'Open Sans';
+    font-size: 12px;
+    color: white;
+}
+

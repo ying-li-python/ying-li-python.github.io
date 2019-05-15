@@ -2,19 +2,439 @@
 <html>
 <head>
     <meta charset="utf-8">
-   
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Ying Li's Github</title>
-</head>
-<body>
-    <h1>Ying Li</h1>
-    <h2>Developer</h2>
-    <p>Paragraph 1</p>
-    <p>Paragraph 2</p>
 
-    <ul>
-        <li><strong>Email: </strong><a href="mailto:yinghiu.li18@gmail.com">yinghiu.li18</a></li>
-        <li><strong>Linkedin: </strong><a href="https://linkedin.com/in/hiuyingli/" target="_blank">hiuyingli</a></li>
-        <li><strong>Github: </strong><a href="https://github.com/ying-li-python" target="_blank">ying-li-python</a></li>
-    </ul>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Fontawesome glyicons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- Link Ref for CSS -->
+    <link href="static/main.css" type="text/css" rel="stylesheet">
+
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function() {
+            var header = $(".navbar");
+        
+            $(window).scroll(function() {    
+                var scroll = $(window).scrollTop();
+                if (scroll >= 200) {
+                    header.addClass("nav-scrolled");
+                } else {
+                    header.removeClass("nav-scrolled");
+                }
+            })
+        });
+    </script>
+</head>
+
+<header>
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+    <div class="container-fluid first-container">
+        <a class="navbar-brand" href="#">yingli</a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li> 
+            </ul> 
+        </div>
+    </div>
+</nav>
+
+<div id="intro" class="view">
+    <div class="container-fluid d-flex align-items-center justify-content-center h-100">
+        <div class="row d-flex justify-content-center text-center">
+            <div class="col-md-10">  
+                
+                    <!-- Heading -->
+                    <h2 class="display-4 font-weight-bold pt-5 mb-2"><div class="landing">Hi, I'm Ying</div></h2>
+                    <br>
+                    <!-- Description -->
+                    <h4 class="my-4"><div class="landing">Ph.D in Entomology. Passionate about data, web development, and coffee.</div></h4>
+                <br>
+                <a class="social" href="mailto:yinghiu.li18@gmail.com" target="_blank"><i class="fas fa-envelope fa-lg- mr-md-3"></i></a>
+                <a class="social" href="https://www.linkedin.com/in/hiuyingli/" target="_blank"><i class="fab fa-linkedin fa-lg mr-md-3"></i></a>
+                <a class="social" href="https://github.com/ying-li-python"><i class="fab fa-github fa-lg- mr-md-3"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</header>
+    
+<!-- Main layout -->
+<div class="container">
+
+    <!--Section: about-->
+    <section id="about" class="text-center">
+        <br>
+        <br>
+        <br>
+        <!-- Heading -->
+        <div class="title mb-5">About Me</div>
+
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center mb-4">
+
+            <!--Grid column-->
+
+            <div class="col-md-8">
+                <!-- Description -->
+                <p class="grey-text">I am a self-starter who is passionate about using technology for social good.
+                 Let's <a href="https://www.linkedin.com/in/hiuyingli/" target="_blank"><u>connect</u></a> if you want to learn more.
+                </p>
+            </div>
+            <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+        <br>
+        <!--Grid row-->
+        <div class="row">
+
+            <!--Grid column-->
+            <div class="col-md-6 mb-1">
+                <div class="title my-4"><div class="subtitle">5 peer-reviewed publications</div></div>
+            
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-6 mb-1">
+                <div class="title my-4"><div class="subtitle">6+ years experience</div></div>
+            </div>
+            <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+    </section>
+    <!--Section: About -->
+
+    <hr class="my-5">
+
+    <!--Section: Portfolio-->
+    <section id="portfolio" class="text-center">
+        <br>
+        <br>
+        
+        <!-- Heading -->
+        <div class="title mb-5">Portfolio</div>
+
+        <!-- Heading -->
+        <div class="title mb-5"><div class="subtitle">BuzzFeed Youtube Analytics</div></div>
+
+        <!--Grid row-->
+        <div class="row">
+
+            <!--Grid column-->
+            <div class="col-md-6 mb-4">
+
+                <!--Carousel Wrapper-->
+                <div id="buzzfeed" class="carousel slide carousel-fade carousel-fade" data-ride="carousel">
+                    <!--Indicators-->
+                    <ol class="carousel-indicators">
+                        <li data-target="#buzzfeed" data-slide-to="0" class="active"></li>
+                        <li data-target="#buzzfeed" data-slide-to="1"></li>
+                        <li data-target="#buzzfeed" data-slide-to="2"></li>
+                    </ol>
+                    <!--/.Indicators-->
+                    <!--Slides-->
+                    <div class="carousel-inner z-depth-1-half" role="listbox">
+                        <!--First slide-->
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="https://github.com/ying-li-python/web-visualization/blob/master/Images/web-visualization.png?raw=true"
+                                alt="First slide">
+                        </div>
+                        <!--/First slide-->
+                        <!--Second slide-->
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="https://github.com/ying-li-python/web-visualization/blob/master/Images/taste_like_vs_comments.png?raw=true"
+                                alt="Second slide">
+                        </div>
+                        <!--/Second slide-->
+                        <!--Third slide-->
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="https://github.com/ying-li-python/web-visualization/blob/master/Images/taste_like_vs_views.png?raw=true"
+                                alt="Third slide">
+                        </div>
+                        <!--/Third slide-->
+                    </div>
+                    <!--/.Slides-->
+                    <!--Controls-->
+                    <a class="carousel-control-prev" href="#buzzfeed" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#buzzfeed" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    <!--/.Controls-->
+                </div>
+                <!--/.Carousel Wrapper-->
+
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-6">
+                <br>
+                <br>
+                <!--Excerpt-->
+                <p class="exerpt">A webpage that shows how video likes changes as view count or comment count increases of two popular BuzzFeed shows, and to present data visualizations and observations.</p>
+                <p><a href="https://ying-li-python.github.io/web-visualization/" target="_blank">Live webpage</a></p>
+                <p><a href="https://github.com/ying-li-python/web-visualization" target="_blank">Github Source Code</a></p>
+
+            </div>
+            <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+    <br>
+    <br>
+    <!-- Heading -->
+    <div class="title mb-5"><div class="subtitle">Identify PTMs App</div></div>
+
+    <!--Grid row-->
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4">
+
+            <!--Carousel Wrapper-->
+            <div id="webapp" class="carousel slide carousel-fade carousel-fade" data-ride="carousel">
+                <!--Indicators-->
+                <ol class="carousel-indicators">
+                    <li data-target="#webapp" data-slide-to="0" class="active"></li>
+                    <li data-target="#webapp" data-slide-to="1"></li>
+                </ol>
+                <!--/.Indicators-->
+                <!--Slides-->
+                <div class="carousel-inner z-depth-1-half" role="listbox">
+                    <!--First slide-->
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="static/identify_PTM1.png"
+                            alt="First slide">
+                    </div>
+                    <!--/First slide-->
+                    <!--Second slide-->
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="static/identify_PTM2.png"
+                            alt="Second slide">
+                    </div>
+                    <!--/Second slide-->
+                </div>
+                <!--/.Slides-->
+                <!--Controls-->
+                <a class="carousel-control-prev" href="#webapp" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#webapp" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                <!--/.Controls-->
+            </div>
+            <!--/.Carousel Wrapper-->
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-6">
+            <br>
+            <br>
+            <!--Excerpt-->
+            <p class="exerpt">A web application that matches a peptide sequence to a reference sequence and locate its PTM site. Quick way to piece together peptide fragments from mass spectrometry for PTM mapping.</p>
+            <p><a href="https://peptide-match.herokuapp.com/" target="_blank">Live web app (Heroku)</a></p>
+            <p><a href="https://github.com/ying-li-python/identify-PTMs-app" target="_blank">Github Source Code</a></p>
+
+        </div>
+        <!--Grid column-->
+
+    </div>
+    <!--Grid row-->
+    <br>
+    <br>
+    <div class="title mb-5"><div class="subtitle">Squarespace Designs</div></div>
+
+    <!--Grid row-->
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4">
+
+            <!--Carousel Wrapper-->
+            <div id="squarespace" class="carousel slide carousel-fade carousel-fade" data-ride="carousel">
+                <!--Indicators-->
+                <ol class="carousel-indicators">
+                    <li data-target="#squarespace" data-slide-to="0" class="active"></li>
+                    <li data-target="#squarespace" data-slide-to="1"></li>
+                </ol>
+                <!--/.Indicators-->
+                <!--Slides-->
+                <div class="carousel-inner z-depth-1-half" role="listbox">
+                    <!--First slide-->
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="static/qtvietcafe.png"
+                            alt="First slide">
+                    </div>
+                    <!--/First slide-->
+                    <!--Second slide-->
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="static/skp.png"
+                            alt="Second slide">
+                    </div>
+                    <!--/Second slide-->
+                </div>
+                <!--/.Slides-->
+                <!--Controls-->
+                <a class="carousel-control-prev" href="#squarespace" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#squarespace" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                <!--/.Controls-->
+            </div>
+            <!--/.Carousel Wrapper-->
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-6">
+            <br>
+            <br>
+            <!--Excerpt-->
+            <p class="exerpt">Self-directed the design of company websites for clients from concept to launch. Live websites below.</p>
+            <p><a href="https://www.qtvietcafe.com/" target="_blank">QTVietnamese Cafe</a></p>
+            <p><a href="https://sunkissedproductions.com" target="_blank">SunKissed Productions</a></p>
+
+        </div>
+        <!--Grid column-->
+
+    </div>
+    <br>
+    <br>
+
+    <div class="title mb-5"><div class="subtitle">Additional Projects</div></div>
+
+    <ul class="list-unstyled">
+            <li>
+                <p>
+                <a href="https://github.com/ying-li-python/pubmed-search-api" target="_blank"> <p class="section-link">PubMed Citation Generator</a></p>
+            </li>
+            <li>
+                <p>
+                <a href="https://github.com/ying-li-python/python-challenge" target="_blank"><p class="section-link">Python Challenge</a></p>
+            </li>
+            <li>
+                <p>
+                <a href=" https://github.com/ying-li-python/mission-to-mars" target="_blank"><p class="section-link">Mars Web Scraping (Beautiful Soup)</a></p>
+                  </li>
+            <li>
+                <p>
+                <a href="https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1007953" target="_blank"><em>PLoS Genetics</em> Paper</a></p>
+             </li>     
+          </ul>
+        </div>
+    </section>
+    <!--Section: Portfolio-->
+
+
+</div>
+<br>
+<br>
+<br>
+
+<footer class="page-footer pt-4">
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+    
+          <!-- Grid row -->
+          <div class="row">
+    
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+    
+              <!-- Content -->
+              <h5><strong></strong></h5>
+              <p class="p-footer">PhD in Entomology with 7+ years experience in research, data analysis, and leadership. Creative, results-driven, productive.</p>
+    
+              <p class="p-footer">Technologies: Python, REST API, databases (SQL, NoSQL), HTML/CSS, web frameworks</p>
+    
+             
+            </div>
+            <!-- Grid column -->
+    
+            <hr class="clearfix w-100 d-md-none pb-3">
+    
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-3 mb-md-0 mb-3">
+    
+                <!-- Links -->
+            
+                <ul class="list-unstyled list-inline">
+                  <li class="list-inline-item">
+                    <a href="mailto:yinghiu.li18@gmail.com" target="_blank">
+                      <i class="fas fa-envelope fa-lg- mr-md-3"></i></a>
+                  </li>
+                  <li class="list-inline-item">
+                      <a href="https://www.linkedin.com/in/hiuyingli/" target="_blank">
+                        <i class="fab fa-linkedin-in fa-sm- mr-md-3"></i></a>
+                  </li>
+                  <li class="list-inline-item">
+                      <a href="https://github.com/ying-li-python" target="_blank">
+                        <i class="fab fa-github mr-md-3"></i></a>
+                  </li>
+            
+                </ul>
+                © 2019 hiuyingli
+              </div>
+    
+              <!-- Grid column -->
+          </div>
+    
+          <!-- Grid row -->
+        </div>
+    
+</footer>
+<!-- Footer -->
+
 </body>
 </html>
