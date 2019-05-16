@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>hi - i'm ying</title>
+    <title>yingli</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -35,6 +35,14 @@
                     header.removeClass("nav-scrolled");
                 }
             })
+        });
+    </script>
+    <script>
+        $(function() {
+            $('a[href*=#]').on('click', function(e) {
+                e.preventDefault();
+                $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+            });
         });
     </script>
 </head>
@@ -77,6 +85,11 @@
                 <a class="social" href="mailto:yinghiu.li18@gmail.com" target="_blank"><i class="fas fa-envelope fa-lg- mr-md-3"></i>&nbsp; &nbsp;</a>
                 <a class="social" href="https://www.linkedin.com/in/hiuyingli/" target="_blank"><i class="fab fa-linkedin fa-lg mr-md-3"></i>&nbsp; &nbsp;</a>
                 <a class="social" href="https://github.com/ying-li-python" target="_blank"><i class="fab fa-github fa-lg- mr-md-3"></i>&nbsp; &nbsp;</a>
+
+    
+                <section id="section02" class="demo">
+                    <a href="#about"><span class="arrow-down"></span></a>
+                </section>
             </div>
         </div>
     </div>
@@ -343,7 +356,7 @@
             <!--Excerpt-->
             <p class="exerpt">Self-directed the design of company websites for clients from concept to launch. Live websites below.</p>
             <p><a href="https://www.qtvietcafe.com/" target="_blank">QTVietnamese Cafe</a></p>
-            <p><a href="https://sunkissedproductions.com" target="_blank">SunKissed Productions</a></p>
+            <p><a href="https://sunkissedproductions.com/work" target="_blank">SunKissed Productions</a></p>
 
         </div>
         <!--Grid column-->
@@ -357,7 +370,7 @@
     <ul class="list-unstyled">
             <li>
                 <p>
-                <a href="https://github.com/ying-li-python/pubmed-search-api" target="_blank"> <p class="section-link">PubMed Citation Generator</a></p>
+                <a href="https://github.com/ying-li-python/pubmed-citation-generator" target="_blank"> <p class="section-link">PubMed Citation Generator</a></p>
             </li>
             <li>
                 <p>
