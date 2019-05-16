@@ -23,6 +23,11 @@ html, body, header, #intro {
     font-size: 22px;
 }
 
+.ref-text {
+    font-family: 'Open Sans';
+    font-size: 14px;
+}
+
 .exerpt {
     font-family: 'Open Sans';
     font-size: 16px;
