@@ -243,3 +243,24 @@ a:hover{
 .img-thumbnail {
     border: none;
 }
+
+.brand {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 26px;
+    font-weight: 100;
+    display: inline;
+    text-transform: lowercase;
+    color: orange;
+}
+
+.brand:hover {
+    color: orange;
+}
+
+.brand2 {
+    font-family: arial;
+    font-size: 15px;
+    display: inline;
+    color: white;
+    text-transform: capitalize;
+}
