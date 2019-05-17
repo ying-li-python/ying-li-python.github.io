@@ -48,9 +48,14 @@ h1, h2, h3, h4, h5 {
 }
 
 a {
-    color: rgb(86, 128, 218);
+    color: rgb(26, 82, 202);
     font-family: 'Open Sans';
+    font-weight: 300;
 
+}
+
+.connect {
+    font-size: 15px;
 }
 a:hover{
     color: rgb(35, 66, 134);
@@ -62,6 +67,7 @@ a:hover{
     background: rgb(48, 47, 47);
     transition: background-color 0.2s linear;
     margin-bottom: 20px;
+    max-height: 55px !important;
 }
 .navbar a {
     color: rgb(255, 255, 255) !important;
@@ -72,11 +78,24 @@ a:hover{
     color: rgb(165, 202, 197) !important;
 }
 
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-nav > li > a {
+    padding-top:5px !important; 
+    padding-bottom:5px !important;
+}
+
+.fas.fa-bars {
+    color:white;
+    font-size: 22px;
+  }
+
 .fab, .fas {
     color: #fff;
     font-size: 30px;
 }
-
 
 .fab:hover, .fas:hover {
     color: rgb(165, 202, 197) !important;
@@ -86,6 +105,7 @@ a:hover{
     color: black;
 
 }
+
 .landing {
    /* text-shadow: 2px 2px 4px #000000; */
    font-family: 'Open Sans', sans-serif; 
@@ -95,6 +115,7 @@ a:hover{
    font-weight: 100;
    letter-spacing: 0.05em;
 }
+
 .title {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
@@ -200,7 +221,6 @@ a:hover{
   }
   
   
-  
 .profile-image {
     height: 100px;
     width: 100px;
@@ -212,7 +232,6 @@ a:hover{
     border: 1px solid transparent;
     margin: -1px;
 }
-
  
 .me {
     color: rgb(246, 246, 248);
@@ -264,3 +283,6 @@ a:hover{
     color: white;
     text-transform: capitalize;
 }
+
+
+
