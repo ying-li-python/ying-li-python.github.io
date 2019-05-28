@@ -8,9 +8,7 @@ html, body, header, #intro {
 
 }
 #intro {
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.4),
-        rgba(12, 15, 56, 0.4)), 
+    background: linear-gradient(#034ebe, #9198e5)
         no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -22,10 +20,15 @@ html, body, header, #intro {
     background: #f4f4f4;
 }
 
+#profile {
+    background: #f4f4f4;
+}
+
 
 .grey-text {
     font-family: 'Work Sans', sans-serif;
     font-size: 22px;
+    text-align: center;
 }
 
 .ref-title {
@@ -41,6 +44,7 @@ html, body, header, #intro {
     text-align: left;
     line-height: 1.5em;
     font-weight: 300;
+    color: #5b68af;
 }
 
 .ref-year {
@@ -125,8 +129,10 @@ a:hover{
 
 .btn-success {
     color: #fff;
-    font-size: 12px;
-    padding: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 0 0.2em;
+    padding: 4px;
     background: #b2b2b2;
     border: none;
 }
@@ -212,11 +218,23 @@ a:hover{
    letter-spacing: 0.05em;
 }
 
+.skill-box {
+    padding-top: 10px;
+    
+}
+
 .title {
     font-family: 'Poppins', sans-serif;
     font-size: 36px;
     color:#5b68af;
     
+}
+
+.title-h {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color:#5b68af;
+    text-align: left;
 }
 
 .p-sub {

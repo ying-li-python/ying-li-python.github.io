@@ -43,6 +43,16 @@
             });
         });
     </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141011967-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-141011967-1');
+    </script>
+
 </head>
 
 <header>
@@ -120,7 +130,7 @@
         <br>
         <br>
         <!-- Heading -->
-        <div class="title mb-5">About Me</div>
+        <div class="title mb-5">About</div>
 
         <!--Grid row-->
         <div class="row d-flex justify-content-center mb-4">
@@ -130,7 +140,6 @@
             <div class="col-md-8">
                 <!-- Description -->
                 <p class="grey-text">I am a self-starter who is passionate about using technology for social good.
-                 See my <a href="static/resume.pdf" target="_blank">resume</a> if you want to learn more.
                 </p>
             </div>
             <!--Grid column-->
@@ -142,23 +151,27 @@
         <div class="row">
 
             <!--Grid column-->
-            <div class="col-md-4 mb-1">
+            <div class="col-md-4 mb-1 skill-box">
                 <i class="fas fa-chart-line" style="color:#5b68af; font-size: 50px;"></i>
-                <div class="title my-4"><div class="icon-title">Data Analytics</div></div>
+                <div class="title my-4"><div class="icon-title">Data Exploration</div></div>
+                <p class="exerpt" style="text-align:center; color: rgb(139, 139, 139);">Pandas, matplotlib, scipy<br>SQL/NoSQL<br>REST API, BeautifulSoup</p>
             
             </div>
             <!--Grid column-->
            
             <!--Grid column-->
-            <div class="col-md-4 mb-1">
-                <i class="fas fa-microscope" style="color: #5b68af; font-size: 50px;"></i>
-                <div class="title my-4"><div class="icon-title">Molecular Biology</div></div>
+            <div class="col-md-4 mb-1 skill-box">
+                <i class="fas fa-laptop-code" style="color: #5b68af; font-size: 50px;"></i>
+                <div class="title my-4"><div class="icon-title">Web Development</div></div>
+                <p class="exerpt" style="text-align:center; color: rgb(139, 139, 139);">HTML5, CSS3<br>Flask, Django<br>Javascript, D3.js</p>
+            
             </div>
             <!--Grid column-->
 
-            <div class="col-md-4 mb-1">
-                <i class="fas fa-laptop-code" style="color: #5b68af; font-size: 50px;"></i>
-                <div class="title my-4"><div class="icon-title">Web development</div></div> 
+            <div class="col-md-4 mb-1 skill-box">
+                <i class="fas fa-microscope" style="color: #5b68af; font-size: 50px;"></i>
+                <div class="title my-4"><div class="icon-title">Molecular Biology</div></div> 
+                <p class="exerpt" style="text-align:center; color: rgb(139, 139, 139);">Confocal microsopy<br>Fluorescent Imaging<br>DNA sequencing, RT-PCR</p>
             </div>
 
         </div>
@@ -193,7 +206,7 @@
                 <div class="title"><div class="subtitle">YT Trends</div></div>
                 <p class="describe">Website, Data Analytics & Visualization, 2019</p>
                 <p class="exerpt">A webpage that presents data analytics, visualizations, and observations of two popular BuzzFeed shows. </p>
-                <p class="code-link"><a class="btn btn-primary btn-first" href="https://ying-li-python.github.io/web-visualization/" target="_blank" role="button">Live webpage</a>
+                <p class="code-link"><a class="btn btn-primary btn-first" href="https://yingli.dev/web-visualization/" target="_blank" role="button">Live webpage</a>
                 <a class="btn btn-primary btn-second" href="https://github.com/ying-li-python/web-visualization" target="_blank" role="button">Source Code</a></p>
             </div>   
             <!--Grid column-->
@@ -405,6 +418,7 @@
             <div class="col-md-8">
                 <p class="ref-title"> O-GlcNAcylation of PERIOD regulates its interaction with CLOCK and timing of circadian transcriptional repression</p>
                 <p class="ref-text">
+                    Li, Ying et al.
                     <a class="btn btn-success" href="https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1007953" target="_blank" role="button">View Article <i class="fas fa-external-link-alt fas-small"></i></a>
                 </p>
             </div>
@@ -418,7 +432,9 @@
             <div class="col-md-1"></div>
             <div class="col-md-8">
                 <p class="ref-title">CK1alpha collaborates with DOUBLETIME to regulate PERIOD function in the Drosophila circadian clock</p>
-                <p class="ref-text"> <a class="btn btn-success" href="http://www.jneurosci.org/content/early/2018/10/29/JNEUROSCI.0871-18.2018/tab-article-info?versioned=true" target="_blank" role="button">View Article <i class="fas fa-external-link-alt fas-small"></i></a>
+                <p class="ref-text">
+                    Lam, Vu, Li, Ying et al.
+                <a class="btn btn-success" href="http://www.jneurosci.org/content/early/2018/10/29/JNEUROSCI.0871-18.2018/tab-article-info?versioned=true" target="_blank" role="button">View Article <i class="fas fa-external-link-alt fas-small"></i></a>
                 </p>
             </div>
         </div>
@@ -431,11 +447,14 @@
             <div class="col-md-1"></div>
             <div class="col-md-8">
                 <p class="ref-title">The molecular basis for light entrainment of insect clocks</p>
-                <p class="ref-text"><a class="btn btn-success" href="https://esa.confex.com/esa/ice2016/meetingapp.cgi/Paper/94377" target="_blank" role="button">View Article <i class="fas fa-external-link-alt fas-small"></i></a>
+                <p class="ref-text">
+                Li, Ying et al.
+                <a class="btn btn-success" href="https://esa.confex.com/esa/ice2016/meetingapp.cgi/Paper/94377" target="_blank" role="button">View Article <i class="fas fa-external-link-alt fas-small"></i></a>    
                 </p>
                 <br>
                 <p class="ref-title">Codon usage affects the structure and function of the Drosophila circadian clock protein PERIOD</p>
                 <p class="ref-text">
+                Fu, JingJing, . . . Li, Ying et al.
                 <a class="btn btn-success" href="http://genesdev.cshlp.org/content/30/15/1761.long" target="_blank" role="button">View Article <i class="fas fa-external-link-alt fas-small"></i></a>
                 </p>
             </div>
@@ -449,7 +468,9 @@
             <div class="col-md-1"></div>
             <div class="col-md-8">
                 <p class="ref-title">The catalytic and non-catalytic functions of the Brahma chromatin-remodeling protein collaborate to fine-tune circadian transcription in Drosophila</p>
-                <p class="ref-text"><a class="btn btn-success" href=" https://doi.org/10.1371/journal.pgen.1005307" target="_blank" role="button">View Article <i class="fas fa-external-link-alt fas-small"></i></a>
+                <p class="ref-text">
+                    Kwok, Rosanna, Li, Ying et al.
+                    <a class="btn btn-success" href=" https://doi.org/10.1371/journal.pgen.1005307" target="_blank" role="button">View Article <i class="fas fa-external-link-alt fas-small"></i></a>
                 </p>
           </div>
         </div>     
@@ -459,8 +480,43 @@
 <br>
 <br>
 <br>
-<br>
-<br>
+
+<section id="profile" class="text-center">
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1">
+
+            </div>
+            <div class="col-md-10">
+                    <div class="title-h mb-5">I'm committed to tackling hard problems, one data point at a time</div>
+
+                    <p class="except" style="text-align: left;">
+                    I am passionate about data-driven impacts. At the office, at the home, or at the lab, I am curious about the technology that have inspired us here. With every data point I plot, I think about the real-life story that deserves to be shared for all people.
+                    </p>
+
+                    <p class="except" style="text-align: left;">
+                    Having earned a PhD in Entomology, I am refreshed, excited to create new experiences with data as a Data Scientist/Analyst. Currently, I am building data-driven projects through the Data Analytics and Visualization program at UC Berkeley Extension.
+                    Please do not hesitate to reach out - I am available for a conversation! 
+                    </p>
+                    <br>
+                    <p class="code-link"><a class="btn btn-primary btn-first" href="static/resume.pdf" target="_blank" role="button">Read my resume</a>
+        </div>
+            <div class="col-md-1">
+
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</section>
+
 <footer class="page-footer pt-4">
 
     <!-- Footer Links -->
