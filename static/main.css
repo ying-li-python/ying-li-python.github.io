@@ -1,5 +1,5 @@
 body {
-    font-family: 'Open Sans'; 
+    font-family: 'Work Sans', sans-serif; 
     background-color: rgb(255, 255, 255);
 }
 
@@ -9,38 +9,68 @@ html, body, header, #intro {
 }
 #intro {
     background: linear-gradient(
-        rgba(0, 0, 0, 0.4), 
-        rgba(0, 0, 0, 0.4)),
-        url("https://images.unsplash.com/photo-1499744632587-7798360ba20f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80")no-repeat center center fixed;
+        rgba(0, 0, 0, 0.4),
+        rgba(12, 15, 56, 0.4)), 
+        no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 
+#portfolio {
+    background: #f4f4f4;
+}
+
+
 .grey-text {
-    font-family: 'Open Sans';
+    font-family: 'Work Sans', sans-serif;
     font-size: 22px;
 }
 
+.ref-title {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.2em;
+    font-weight: 400;
+}
 .ref-text {
-    font-family: 'Open Sans';
+    font-family: 'Work Sans', sans-serif;
     font-size: 14px;
+    text-align: left;
+    line-height: 1.5em;
+    font-weight: 300;
 }
 
+.ref-year {
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+}
 .exerpt {
-    font-family: 'Open Sans';
+    font-family: 'Work Sans', sans-serif;
     font-size: 16px;
+    text-align: left;
 }
 
 h1, h2, h3, h4, h5 {
-  font-weight: 700;
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: 200;
+  font-family: 'Work Sans', sans-serif;
   color: white;
 }
 
 .subtitle {
     font-size: 25px;
+    text-align: left;
+    color: #5b68af;
+    text-transform: uppercase;
+}
+
+.describe {
+    font-size: 12px; 
+    text-align: left;
+    color: rgb(75, 75, 75);
 }
 
 .icon-black {
@@ -49,29 +79,78 @@ h1, h2, h3, h4, h5 {
 
 a {
     color: rgb(26, 82, 202);
-    font-family: 'Open Sans';
+    font-family: 'Work Sans', sans-serif;
     font-weight: 300;
 
 }
 
-.connect {
-    font-size: 15px;
-}
 a:hover{
     color: rgb(35, 66, 134);
     text-decoration: none;
 }
 
+.article-link {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    color: #000000;
+}
+
+.article-link:hover {
+    color: blue;
+}
+
+.btn-first {
+    background: #4c9fff;
+    border: none;
+    font-size: 14px;
+    color: #fff;
+}
+
+.btn-first:hover {
+    color: #fff;
+    background: #84beff;
+}
+
+.btn-second {
+    background: #b2b2b2;
+    border: none;
+    font-size: 14px;
+}
+
+.btn-second:hover{
+    color: #fff;
+    background: #cecece;
+}
+
+
+.btn-success {
+    color: #fff;
+    font-size: 12px;
+    padding: none;
+    background: #b2b2b2;
+    border: none;
+}
+
+.btn-success:hover {
+    color: #fff;
+    background: #cecece;
+}
+
+.code-link {
+    text-align: left;
+}
+
 .navbar {
     font-family: arial !important;
+    font-size: 18px;
     background: rgb(48, 47, 47);
     transition: background-color 0.2s linear;
     margin-bottom: 20px;  
+    letter-spacing: 0.05em;
 
 }
 .navbar a {
     color: rgb(255, 255, 255) !important;
-    text-transform: uppercase;
 }
 
 .navbar a:hover{
@@ -88,7 +167,7 @@ a:hover{
 }
 
 .fas.fa-bars {
-    color:white;
+    color:#fff;
     font-size: 22px;
   }
 
@@ -98,8 +177,25 @@ a:hover{
 }
 
 .fab:hover, .fas:hover {
-    color: rgb(165, 202, 197) !important;
-}   
+    color: #5b68af !important;
+} 
+
+.fas-small {
+    font-size: 14px;
+    color: #fff;
+
+}
+
+.fas-small:hover {
+    color: #fff !important;
+}
+
+.icon-title {
+    color: #5b68af;
+    text-transform: none;
+    text-align: center;
+    font-size: 25px;
+}
 
 .icon-black, .icon-black:hover {
     color: black;
@@ -108,7 +204,7 @@ a:hover{
 
 .landing {
    /* text-shadow: 2px 2px 4px #000000; */
-   font-family: 'Open Sans', sans-serif; 
+   font-family: 'Work Sans', sans-serif;
    font-size: 20px;
    color: white;
    text-align: left;
@@ -117,13 +213,15 @@ a:hover{
 }
 
 .title {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    font-size: 40px;
-    color:rgb(165, 202, 197);
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    color:#5b68af;
     
 }
 
+.p-sub {
+    font-size: 12px;
+}
 @media only screen and (min-width:768px) {
     .navbar { background-color: transparent; border:none; transition:0.8s; }
     .nav-scrolled { background-color:rgb(48, 47, 47); transition:0.8s; }
@@ -150,12 +248,12 @@ a:hover{
 }
 
 .section-link {
-    color: rgb(86, 128, 218);
+    color: #5b68af;
 }
 
 .page-footer {
     background: #09091f;
-    font-family: 'Open Sans';
+    font-family: 'Work Sans', sans-serif; 
     font-size: 14px;
     color: white;
 }
@@ -260,29 +358,24 @@ a:hover{
     }
 
 .img-thumbnail {
+    background: transparent;
     border: none;
+    border-radius: 30px;
 }
 
 .brand {
-    font-family: 'Cedarville Cursive', cursive;
-    font-size: 26px;
-    font-weight: 100;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
     display: inline;
-    text-transform: lowercase;
-    color: orange;
+    text-transform: uppercase;
+    color: #fff;
 }
 
 .brand:hover {
-    color: orange;
+    color:rgb(165, 202, 197);
 }
 
-.brand2 {
-    font-family: arial;
-    font-size: 15px;
-    display: inline;
-    color: white;
-    text-transform: capitalize;
-}
 
 
 
