@@ -360,7 +360,6 @@ a:hover{
 .img-thumbnail {
     background: transparent;
     border: none;
-    border-radius: 30px;
 }
 
 .brand {
