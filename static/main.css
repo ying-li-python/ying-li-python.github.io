@@ -20,7 +20,7 @@ html, body, header, #intro {
     background: #f4f4f4;
 }
 
-#profile {
+#objectives {
     background: #f4f4f4;
 }
 
@@ -220,7 +220,6 @@ a:hover{
 
 .skill-box {
     padding-top: 10px;
-    
 }
 
 .title {
