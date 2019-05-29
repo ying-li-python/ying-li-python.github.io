@@ -115,6 +115,13 @@ a:hover{
     background: #84beff;
 }
 
+.btn-first:active, .btn-first:active:focus, .btn-first:focus {
+    color: #fff;
+    background: #84beff !important;
+    box-shadow: none !important;
+
+}
+
 .btn-second {
     background: #b2b2b2;
     border: none;
@@ -126,7 +133,12 @@ a:hover{
     background: #cecece;
 }
 
+.btn-second:active, .btn-second:active:focus, .btn-second:focus {
+    color: #fff;
+    background: #cecece!important;
+    box-shadow: none !important;
 
+}
 .btn-success {
     color: #fff;
     display: inline-block;
@@ -142,6 +154,12 @@ a:hover{
     background: #cecece;
 }
 
+.btn-success:active, .btn-sucess:active:focus, .btn-success:focus {
+    color: #fff;
+    background: #cecece!important;
+    box-shadow: none !important;
+
+}
 .code-link {
     text-align: left;
 }
