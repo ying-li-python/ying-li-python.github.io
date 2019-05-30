@@ -389,6 +389,23 @@ h2 {
     margin: -1px;
 }
 
+.image-post {
+    padding-right: 10px;
+}
+.about-image {
+    height: 350px;
+    width: 300px;
+    overflow: hidden;
+    vertical-align: middle;
+    border-radius: 50%;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    border: 1px solid transparent;
+    margin: -1px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
 .tags {
     background: #1abc9c;
     border-radius: 2px;
