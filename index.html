@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins|Work+Sans:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Work+Sans:300,400,600,700&display=swap" rel="stylesheet">
     <!-- Link Ref for CSS -->
     <link href="static/main.css" type="text/css" rel="stylesheet">
 
@@ -20,6 +20,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- script for navbar transition -->
     <script>
         $(document).ready(function() {
             var header = $(".navbar");
@@ -35,6 +37,7 @@
         });
     </script>
 
+    <!-- script for scroll down arrow -->
     <script>
         $(function() {
             $('a[href*=#]').on('click', function(e) {
@@ -43,6 +46,7 @@
             });
         });
     </script>
+
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141011967-1"></script>
@@ -112,16 +116,16 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#about"><h2>About</h2></a>
                 </li> 
                 <li class="nav-item">
-                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                    <a class="nav-link" href="#portfolio"><h2>Portfolio</h2></a>
                 </li> 
                 <li class="nav-item">
-                    <a class="nav-link" href="#publications">Publications</a>
+                    <a class="nav-link" href="#publications"><h2>Publications</h2></a>
                 </li> 
                 <li class="nav-item">
-                    <a class="nav-link" href="#objectives">Objectives</a>
+                    <a class="nav-link" href="#objectives"><h2>Objectives</h2></a>
                 </li> 
             </ul> 
         </div>
@@ -143,7 +147,7 @@
                         <div class="media-body">
                             <h5 class="display-4 font-weight-bold text-left mt-0"><div class="me">Hi, I'm Ying</div></h5>
                             <div class="landing">
-                            PhD in Entomology with specialization in data-driven research, testing, and validation. Talk to me about experimental designs, data exploration, or data visualization.
+                            PhD in Entomology with specialization in data exploration and visualizations. Actively seeking new opportunities as a Data Analyst, Data Scientist, or Bioinformatics Scientist.
                             </div>
                             
                         </div>
@@ -171,8 +175,8 @@
 </header>
     
 <!-- Main layout -->
-<div class="container">
-
+<div class="container fade-in">
+    
     <!--Section: about-->
     <section id="about" class="text-center">
         <br>
@@ -212,7 +216,7 @@
             <div class="col-md-4 mb-1 skill-box">
                 <i class="fas fa-laptop-code" style="color: #5b68af; font-size: 50px;"></i>
                 <div class="title my-4"><div class="icon-title">Web Development</div></div>
-                <p class="exerpt" style="text-align:center; color: rgb(139, 139, 139);">HTML5, CSS3<br>Flask, Django<br>Javascript, D3.js</p>
+                <p class="exerpt" style="text-align:center; color: rgb(139, 139, 139);">HTML5, CSS3<br>Flask, Django<br>D3.js, plotly.js</p>
             
             </div>
             <!--Grid column-->
@@ -225,7 +229,29 @@
 
         </div>
         <!--Grid row-->
-
+        <br>
+        <br>
+        <div class="row">
+            <div class="col">
+                <p class="about-social">
+                    I'd love to chat:
+                    <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item">
+                        <a href="mailto:yinghiu.li18@gmail.com" target="_blank">
+                            <i class="fas fa-envelope fa-lg- mr-md-3" style="color: #5b68af;"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/in/hiuyingli/" target="_blank">
+                            <i class="fab fa-linkedin-in fa-sm- mr-md-3" style="color: #5b68af;"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://github.com/ying-li-python" target="_blank">
+                            <i class="fab fa-github mr-md-3" style="color: #5b68af;" ></i></a>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
     </section>
     <!--Section: About -->
     <br>
@@ -249,7 +275,7 @@
         <div class="row">
             <!--Grid column-->
             <div class="col-sm">
-                <img class="img-thumbnail" src="static/youtube.png" alt="web-visualization">
+                <img class="img-thumbnail" src="static/yt_trends.png" alt="web-visualization">
             </div>
             <div class="col-sm">
                 <div class="title"><div class="subtitle">YT Trends</div></div>
@@ -411,7 +437,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <p class="exerpt" style="text-align: center;">
+            <p class="exerpt" style="text-align: center; font-size:20px;">
                 Citation Generator
                 <br>
                 <p class="describe" style="text-align: center;">
@@ -463,64 +489,77 @@
             <div class="col-md-2">
                 <div class="ref-year">2019</div>
             </div>
-            <div class="col-md-1"></div>
             <div class="col-md-8">
                 <p class="ref-title"> O-GlcNAcylation of PERIOD regulates its interaction with CLOCK and timing of circadian transcriptional repression</p>
                 <p class="ref-text">
                     Li, Ying et al.
-                    <a class="btn btn-success" href="https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1007953" target="_blank" role="button">View Article <i class="fas fa-external-link-alt fas-small"></i></a>
                 </p>
             </div>
+            <div class="col-md-2">
+                <a class="btn btn-success" href="https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1007953" target="_blank" role="button">View Article <i class="fas fa-external-link-alt fas-small"></i></a>
+            </div>
         </div>
-        <br>
+        <hr>
         <br>
         <div class="row">
             <div class="col-md-2">
                 <div class="ref-year">2018</div>
             </div>
-            <div class="col-md-1"></div>
             <div class="col-md-8">
                 <p class="ref-title">CK1alpha collaborates with DOUBLETIME to regulate PERIOD function in the Drosophila circadian clock</p>
                 <p class="ref-text">
                     Lam, Vu, Li, Ying et al.
-                <a class="btn btn-success" href="http://www.jneurosci.org/content/early/2018/10/29/JNEUROSCI.0871-18.2018/tab-article-info?versioned=true" target="_blank" role="button">View Article <i class="fas fa-external-link-alt fas-small"></i></a>
                 </p>
             </div>
+            <div class="col-md-2">
+                <a class="btn btn-success" href="http://www.jneurosci.org/content/early/2018/10/29/JNEUROSCI.0871-18.2018/tab-article-info?versioned=true" target="_blank" role="button">View Article <i class="fas fa-external-link-alt fas-small"></i></a>
+            </div>
         </div>
-        <br>
+        <hr>
         <br>
         <div class="row">
             <div class="col-md-2">
                 <div class="ref-year">2016</div>
             </div>
-            <div class="col-md-1"></div>
             <div class="col-md-8">
                 <p class="ref-title">The molecular basis for light entrainment of insect clocks</p>
                 <p class="ref-text">
                 Li, Ying et al.
+                </p>
+            </div>
+            <div class="col-md-2">
                 <a class="btn btn-success" href="https://esa.confex.com/esa/ice2016/meetingapp.cgi/Paper/94377" target="_blank" role="button">View Article <i class="fas fa-external-link-alt fas-small"></i></a>    
-                </p>
-                <br>
-                <p class="ref-title">Codon usage affects the structure and function of the Drosophila circadian clock protein PERIOD</p>
-                <p class="ref-text">
-                Fu, JingJing, . . . Li, Ying et al.
-                <a class="btn btn-success" href="http://genesdev.cshlp.org/content/30/15/1761.long" target="_blank" role="button">View Article <i class="fas fa-external-link-alt fas-small"></i></a>
-                </p>
             </div>
         </div>
         <br>
+        <div class="row">
+                <div class="col-md-2">
+                    <div class="ref-year"></div>
+                </div>
+                <div class="col-md-8">
+                    <p class="ref-title">Codon usage affects the structure and function of the Drosophila circadian clock protein PERIOD</p>
+                    <p class="ref-text">
+                    Fu, JingJing, . . . Li, Ying et al.
+                    </p>
+                </div>
+                <div class="col-md-2">
+                    <a class="btn btn-success" href="http://genesdev.cshlp.org/content/30/15/1761.long" target="_blank" role="button">View Article <i class="fas fa-external-link-alt fas-small"></i></a>
+                </div>
+            </div>
+        <hr>
         <br>
         <div class="row">
             <div class="col-md-2">
                 <div class="ref-year">2015</div>
             </div>
-            <div class="col-md-1"></div>
             <div class="col-md-8">
                 <p class="ref-title">The catalytic and non-catalytic functions of the Brahma chromatin-remodeling protein collaborate to fine-tune circadian transcription in Drosophila</p>
                 <p class="ref-text">
-                    Kwok, Rosanna, Li, Ying et al.
-                    <a class="btn btn-success" href=" https://doi.org/10.1371/journal.pgen.1005307" target="_blank" role="button">View Article <i class="fas fa-external-link-alt fas-small"></i></a>
+                    Kwok, Rosanna, Li, Ying et al. 
                 </p>
+          </div>
+          <div class="col-md-2">
+            <a class="btn btn-success" href=" https://doi.org/10.1371/journal.pgen.1005307" target="_blank" role="button">View Article <i class="fas fa-external-link-alt fas-small"></i></a>
           </div>
         </div>     
     </div>

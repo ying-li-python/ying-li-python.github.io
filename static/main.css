@@ -7,6 +7,8 @@ html, body, header, #intro {
     height: 100%;
 
 }
+
+
 #intro {
     background: linear-gradient(#034ebe, #9198e5)
         no-repeat center center fixed;
@@ -24,7 +26,20 @@ html, body, header, #intro {
     background: #f4f4f4;
 }
 
+.about-social {
+    font-size: 28px;
+    font-family: 'Work Sans', sans-serif;
+    color: #5b68af;
+    font-weight: 600;
+    text-align: center;
+}
 
+.about-icon:hover {
+    color: grey;
+}
+.icon-white {
+    color: #5b68af;
+}
 .grey-text {
     font-family: 'Work Sans', sans-serif;
     font-size: 22px;
@@ -33,14 +48,14 @@ html, body, header, #intro {
 
 .ref-title {
     font-family: 'Work Sans', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     text-align: left;
     line-height: 1.2em;
-    font-weight: 400;
+    font-weight: 600;
 }
 .ref-text {
     font-family: 'Work Sans', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     text-align: left;
     line-height: 1.5em;
     font-weight: 300;
@@ -49,7 +64,7 @@ html, body, header, #intro {
 
 .ref-year {
     font-weight: 700;
-    font-size: 22px;
+    font-size: 25px;
     text-align: center;
 }
 .exerpt {
@@ -58,12 +73,20 @@ html, body, header, #intro {
     text-align: left;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h3, h4, h5 {
   font-weight: 200;
   font-family: 'Work Sans', sans-serif;
   color: white;
 }
 
+h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 200;
+    color: white;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 2px;
+}
 .subtitle {
     font-size: 25px;
     text-align: left;
@@ -72,7 +95,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .describe {
-    font-size: 12px; 
+    font-size: 14.5px; 
     text-align: left;
     color: rgb(75, 75, 75);
 }
@@ -81,27 +104,6 @@ h1, h2, h3, h4, h5 {
     color: black;
 }
 
-a {
-    color: rgb(26, 82, 202);
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 300;
-
-}
-
-a:hover{
-    color: rgb(35, 66, 134);
-    text-decoration: none;
-}
-
-.article-link {
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 400;
-    color: #000000;
-}
-
-.article-link:hover {
-    color: blue;
-}
 
 .btn-first {
     background: #4c9fff;
@@ -141,10 +143,8 @@ a:hover{
 }
 .btn-success {
     color: #fff;
-    display: inline-block;
-    font-size: 13px;
-    margin: 0 0.2em;
-    padding: 4px;
+    font-size: 14px;
+    align-content: left;
     background: #b2b2b2;
     border: none;
 }
@@ -178,12 +178,18 @@ a:hover{
 }
 
 .navbar a:hover{
-    color: rgb(165, 202, 197) !important;
+    color: #5b68af !important;
 }
 
 .navbar-toggler {
     border: none;
 }
+
+.navbar-toggler:active, .navbar-toggler:active:focus, .navbar-toggler:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
 
 .navbar-nav > li > a {
     padding-top:5px !important; 
@@ -244,7 +250,6 @@ a:hover{
     font-family: 'Poppins', sans-serif;
     font-size: 36px;
     color:#5b68af;
-    
 }
 
 .title-h {
@@ -407,9 +412,9 @@ a:hover{
 }
 
 .brand:hover {
-    color:rgb(165, 202, 197);
+    color:#5b68af;
 }
 
-
-
-
+.link-custom {
+    font-weight: 300;
+}
