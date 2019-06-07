@@ -40,6 +40,17 @@ html, body, header, #intro {
 .icon-white {
     color: #5b68af;
 }
+
+.icon {
+    position: relative;
+    padding: 1px;
+    transition: transform 0.2s;
+  }
+
+.icon:hover {
+    transform: scale(1.2);
+  }
+
 .grey-text {
     font-family: 'Work Sans', sans-serif;
     font-size: 22px;
