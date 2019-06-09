@@ -3,13 +3,12 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
-html, body, header, #intro {
+html, body, header, #hero {
     height: 100%;
 
 }
 
-
-#intro {
+#hero {
     background: linear-gradient(#034ebe, #9198e5)
         no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -90,14 +89,30 @@ h1, h3, h4, h5 {
   color: white;
 }
 
-h2 {
+
+.link-nav {
     font-family: 'Work Sans', sans-serif;
     font-weight: 200;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 18px;
     padding-top: 5px;
     padding-bottom: 2px;
 }
+
+.link-nav:hover {
+    border-bottom: 1px solid #fff !important;
+
+}
+@media(max-width: 700px) {
+    .link-nav {
+        color: #000 !important;
+    }
+    .brand {
+        color: #000 !important;
+    }
+}
+
+
 .subtitle {
     font-size: 25px;
     text-align: left;
@@ -176,20 +191,27 @@ h2 {
 }
 
 .navbar {
-    font-family: arial !important;
+    font-family: "Work Sans" !important;
     font-size: 18px;
-    background: rgb(48, 47, 47);
+    /* background: rgb(48, 47, 47); */
+    background: #fff;
     transition: background-color 0.2s linear;
     margin-bottom: 20px;  
     letter-spacing: 0.05em;
 
 }
-.navbar a {
-    color: rgb(255, 255, 255) !important;
+
+.link:hover {
+    color:#5b68af !important;
+    border-bottom: none !important;
 }
 
-.navbar a:hover{
+.link:active {
     color: #5b68af !important;
+}
+
+.brand-scrolled:hover {
+    color:#5b68af !important;
 }
 
 .navbar-toggler {
@@ -201,14 +223,13 @@ h2 {
     outline: none !important;
 }
 
-
 .navbar-nav > li > a {
     padding-top:5px !important; 
     padding-bottom:5px !important;
 }
 
 .fas.fa-bars {
-    color:#fff;
+    color:rgb(24, 24, 24);
     font-size: 22px;
   }
 
@@ -273,10 +294,18 @@ h2 {
 .p-sub {
     font-size: 12px;
 }
+
+
 @media only screen and (min-width:768px) {
     .navbar { background-color: transparent; border:none; transition:0.8s; }
-    .nav-scrolled { background-color:rgb(48, 47, 47); transition:0.8s; }
-
+    .nav-scrolled { background-color:rgb(255, 255, 255);transition:0.8s; 
+        -webkit-box-shadow: 0 2px 4px -1px #999;
+        -moz-box-shadow: 0 2px 4px -1px #999;
+        box-shadow: 0 2px 4px -1px #999;
+        margin-top: -8px !important;
+        padding-bottom: -15px !important; }
+    .link {color: #000;}
+    .brand-scrolled {color: #5b68af !important;}
 }
 
 .carousel-control-prev-icon {
@@ -417,6 +446,10 @@ h2 {
     filter: grayscale(100%);
 }
 
+.nav-link {
+    padding: 2px 5px;
+}
+
 .tags {
     background: #1abc9c;
     border-radius: 2px;
@@ -436,12 +469,13 @@ h2 {
     font-weight: 700;
     display: inline;
     text-transform: uppercase;
-    color: #fff;
+    color: rgb(255, 255, 255);
 }
 
-.brand:hover {
-    color:#5b68af;
+.brand-link:hover {
+    color:#5b68af !important;
 }
+
 
 .link-custom {
     font-weight: 300;
