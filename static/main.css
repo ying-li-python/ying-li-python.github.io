@@ -332,10 +332,10 @@ h1, h3, h4, h5 {
 }
 
 .page-footer {
-    background: #09091f;
+    background: #333E46;
     font-family: 'Work Sans', sans-serif; 
     font-size: 14px;
-    color: white;
+    color: #d0dbe6;
 }
 
 #section02 a {
