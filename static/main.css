@@ -191,7 +191,7 @@ h1, h3, h4, h5 {
 
 }
 .code-link {
-    text-align: center;
+    text-align: left;
 }
 
 .navbar {
@@ -539,7 +539,7 @@ h1, h3, h4, h5 {
     transition-duration: .3s;
     transform: translate(-50%, -50%) 
   }
-  .container-gallery:hover img{
+  .container-gallery:hover .gallery-img{
     transform: scale(1.2);
     transition-duration: .3s;
     filter: grayscale(50%);
@@ -579,42 +579,37 @@ h1, h3, h4, h5 {
     font-size: 16px;
   }
 
-  /* The Modal (background) */
-.modal {
-    display: none; 
-    position: fixed; /* Stay in place */
-    z-index: 5; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
   
-  /* Modal Content */
-  .modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 30px;
-    border: 1px solid #888;
-    width: 60%;
+  .modal-title {
+      color: #fff;
+      font-weight: 500;
+      text-align: left;
+      font-size: 25px;
+      padding-left: 15px;
   }
-  
-  /* The Close Button */
-  /* .modal-content .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 32px;
-    font-weight: bold;
-  } */
-  
-  /* .modal-content .close:hover,
-  .modal-content .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
+
+  .modal-header {
+      border-bottom: none;
+      background: #5b68af;
   }
- */
+
+  .modal-img {
+      transform: none;
+      transition-duration: none;
+      filter: none;
+      background: none;
+      opacity: none;
+  }
+
+  .modal-body {
+      background: #f4f4f4;
+  }
+  .modal-col {
+      padding-left: 15px;
+      padding-right: 15px;
+  }
+
+  .modal-p {
+      text-align: left;
+      padding: 0px;
+  }
