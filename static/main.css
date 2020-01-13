@@ -616,7 +616,7 @@ h1, h3, h4, h5 {
 
   @media(max-width: 600px) {
     .logo {
-      width: 150px;
+      width: 140px;
       height: 38px;
     }
   }
